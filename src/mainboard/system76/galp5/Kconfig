@@ -64,6 +64,10 @@ config DRIVERS_SYSTEM76_DGPU_DEVICE
 	hex
 	default 0x1c
 
+config FMDFILE
+	string
+	default "src/mainboard/\$(CONFIG_MAINBOARD_DIR)/board.fmd"
+
 config MAX_CPUS
 	int
 	default 8
