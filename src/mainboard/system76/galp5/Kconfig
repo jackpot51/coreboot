@@ -44,10 +44,6 @@ config MAINBOARD_VERSION
 
 #TODO: subsystem IDs
 
-config CBFS_SIZE
-	hex
-	default 0xA00000
-
 config CONSOLE_POST
 	bool
 	default y
