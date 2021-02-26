@@ -1,44 +1,7 @@
 # System76 Lemur Pro (lemp9)
 
-## Specs
-
-- CPU
-    - Intel i7-10510U
-    - Intel i5-10210U
-- EC
-    - ITE IT5570E running https://github.com/system76/ec
-    - Backlit Keyboard, with standard PS/2 keycodes and SCI hotkeys
-    - Battery
-    - Charger, using AC adapter or USB-C PD
-    - Suspend/resume
-    - Touchpad
-- GPU
-    - Intel UHD Graphics 620
-    - GOP driver is recommended, VBT is provided
-    - eDP 14-inch 1920x1080 LCD
-    - HDMI video
-    - USB-C DisplayPort video
-- Memory
-    - Channel 0: 8-GB on-board DDR4 Samsung K4AAG165WA-BCTD
-    - Channel 1: 8-GB/16-GB/32-GB DDR4 SO-DIMM
-- Networking
-    - M.2 PCIe/CNVi WiFi/Bluetooth
-- Sound
-    - Realtek ALC293D
-    - Internal speaker
-    - Internal microphone
-    - Combined headphone/microphone 3.5-mm jack
-    - HDMI audio
-    - USB-C DisplayPort audio
-- Storage
-    - M.2 PCIe/SATA SSD-1
-    - M.2 PCIe/SATA SSD-2
-    - RTS5227S MicroSD card reader
-- USB
-    - 1280x720 CCD camera
-    - USB 3.1 Gen 2 Type-C (left)
-    - USB 3.1 Gen 2 Type-A (left)
-    - USB 3.1 Gen 1 Type-A (right)
+See the [product page][lemp9] for a general overview. See the
+[tech-docs] for internal photos and repair guide.
 
 ## Building coreboot
 
@@ -71,3 +34,13 @@ make
 | External flashing   | yes        |
 +---------------------+------------+
 ```
+
+The flash chip is located between the RAM slot and fan.
+
+## Resources
+
+- [GD25Q128C data sheet][GD25Q128C]
+
+[lemp9]: https://system76.com/guides/lemp9
+[tech-docs]: https://tech-docs.system76.com/models/lemp9/README.html
+[GD25Q128C]: https://www.gigadevice.com/datasheet/gd25q128c/gd251128c_v2.5_20170726.pdf
